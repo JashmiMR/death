@@ -48,7 +48,7 @@ const UserSchema = mongoose.Schema({
     otp: String,
   })
 
-  const UserModel = mongoose.model("users, UserSchema")
+  const UserModel = mongoose.model("users", UserSchema)
   
 
 app.get("/getUsers", (req, res) =>{
@@ -61,6 +61,6 @@ app.get("/getUsers", (req, res) =>{
 })
 
 app.listen(3001, () => {
-    console.console.log("Server is running")
+    console.log("Server is running")
     
 })
